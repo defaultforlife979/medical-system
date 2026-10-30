@@ -24,5 +24,7 @@ namespace MedicalSystem.Spravki
         {
             return Price + (AnalysisCount * 100);
         }
+
+        public string GetShortInfo() => $"{SpravkaName}: {CalculatePrice():F2}";
     }
 }
